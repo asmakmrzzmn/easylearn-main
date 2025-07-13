@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/question.css">
+    <title>Chapter 6</title>
+</head>
+<body>
+  <div class="chapter-container">
+    <div class="chapter-nav">
+      <a href="index.html" style="color: rgb(128, 125, 125);"> <  Back to Home</a>
+      <h2>CHAPTER 6</h1>
+      <h2>Content</h1>
+      <ul>
+        <li><a href="#video1">Check this out!</a></li>
+        <li><a href="#learn">Here’s what you’ll learn</a></li>
+        <li><a href="#know">What do you already know?</a></li>
+        <li><a href="#phases">How is the game made?</a></li>
+        <li><a href="#protip">Pro Tip!</a></li>
+        <li><a href="#quiz">Give it a try!</a></li>
+        <li><a href="#match">Think like the Bot!</a></li>
+        <li><a href="#final">You’re a Game Developer master now!</a></li>
+      </ul>
+    </div>
+
+    <main class="chapter-content">
+
+      <h2>Check this out!</h2>
+      <section id="video1">
+        <video controls poster="assets/sum6-thumbnail.jpg">
+        <source src="assets/Chp6.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <div id="learn">
+          <h2>Here’s what you’ll learn</h2>
+          <ul>
+              <li>Explain the processes involved in game production and the role of product management in delivering successful games.</li>
+              <li>Describe the roles and responsibilities of professionals in the game industry and how they contribute to game development.</li>
+              <li>Explain strategies and techniques used in marketing games to reach target audiences effectively.</li>
+          </ul>
+      </div>
+
+
+      <div id="know" style="margin-top: 15px !important;">
+        <h2>What do you already know?</h2>
+          <section class="card">
+          <!-- Q1 -->
+          <div class="question">
+            <p>Who makes sure the game project stays on time and on budget?</p>
+            <label><input type="radio" name="kq1" value="A"> A. The artist</label>
+            <label><input type="radio" name="kq1" value="B"> B. The player</label>
+            <label><input type="radio" name="kq1" value="C"> C. The producer </label>
+            <label><input type="radio" name="kq1" value="D"> D. The game tester</label>
+            <button onclick="submitAnswer('kq1', 'C', 'kfeedback1')">Submit</button>
+            <div class="feedback" id="kfeedback1"></div>
+          </div> </section>
+
+          <section class="card">
+          <!-- Q2 -->
+          <div class="question">
+            <p>Making your own game starts with learning how to code.</p>
+            <label><input type="radio" name="kq2" value="true"> True</label>
+            <label><input type="radio" name="kq2" value="false"> False</label>
+            <button onclick="submitAnswer('kq2', 'false', 'kfeedback2')">Submit</button>
+            <div class="feedback" id="kfeedback2"></div>
+          </div>
+        </section>
+      </div>
+
+      <h2>How is the game made?</h2>
+      <section id="phases">
+          <p>6.1 Game Production and Product Management</p>
+        <a href="assets/Concept Phase.png" class="lightbox">
+          <img src="assets/Concept Phase.png" alt="Concept Phases" />
+        </a>
+        <a href="assets/production-pipeline.jpg" class="lightbox">
+          <img src="assets/production-pipeline.jpg" alt="Production Pipeline" />
+        </a>
+        <br>
+        <p>6.2 Game Industry Role</p>
+        <br>
+        <video controls poster="assets/sum6-thumbnail.jpg">
+        <source src="assets/Chp6.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <br>
+        <p>6.3 Game Marketing</p><br>
+
+        <video controls poster="assets/6.3_thumbnail.png">
+        <source src="assets/6.3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <h2>Pro Tip!</h2>
+      <section id="protip">
+        <h3>You could build a chess-inspired game in just 3 days!</h3>
+        <p>Start small — a puzzle, a mini-game, or a new twist on the rules.</p>
+
+        <h3>Game Creator Challenge:</h3>
+        <p>You have just 3 days to make a chess game!</p>
+        <p>Ask yourself:</p>
+        <ul>
+          <li>What kind of game could <strong>YOU</strong> build in just 3 days?</li>
+          <li>What would the game look like?</li>
+          <li>What would the player do?</li>
+        </ul>
+      </section>
+
+      <h2>Give it a try!</h2>
+      <section id="quiz">
+          <section class="card">
+          <!-- Q3 -->
+          <div class="question">
+            <p>A bug in a game is a fun surprise level that players can find.</p>
+            <label><input type="radio" name="q1" value="true"> True</label>
+            <label><input type="radio" name="q1" value="false"> False</label>
+            <button onclick="submitAnswer('q1', 'false', 'feedback1')">Submit</button>
+            <div class="feedback" id="feedback1"></div>
+          </div></section>
+
+          <section class="card">
+          <!-- Q4 -->
+          <div class="question">
+            <p>What happens during the Testing stage of making a game?</p>
+            <label><input type="radio" name="q2" value="A"> A. We come up with the idea for the game.</label>
+            <label><input type="radio" name="q2" value="B"> B. We draw and design characters and backgrounds.</label>
+            <label><input type="radio" name="q2" value="C"> C. We play the game to find bugs or problems.</label>
+            <label><input type="radio" name="q2" value="D"> D. We release the game for everyone to play.</label>
+            <button onclick="submitAnswer('q2', 'C', 'feedback2')">Submit</button>
+            <div class="feedback" id="feedback2"></div>
+          </div></section>
+
+          <section class="card">
+          <!-- Q5 -->
+          <div class="question">
+            <p>What usually happens during the Pre-Production phase of making a game?</p>
+            <label><input type="radio" name="q3" value="A"> A. The team starts selling the game</label>
+            <label><input type="radio" name="q3" value="B"> B. The team comes up with ideas and plans how the game will work</label>
+            <label><input type="radio" name="q3" value="C"> C. The game is tested for bugs</label>
+            <label><input type="radio" name="q3" value="D"> D. The game is updated with new content</label>
+            <button onclick="submitAnswer('q3', 'B', 'feedback3')">Submit</button>
+            <div class="feedback" id="feedback3"></div>
+          </div>
+        </section>
+      </section>
+
+      <h2>Think Like the Bot!</h2>
+      <section id="match">
+        <p>Match each action to the AI process.</p>
+        <div class="question-box">
+          <div class="scene">🎮 A player playing the game and writing notes <div class="dropzone" data-answer="Testing"></div></div>
+          <div class="scene">📱 The game is on the app store with "Play Now!" <div class="dropzone" data-answer="Launching"></div></div>
+          <div class="scene">✏️ Characters and backgrounds being drawn <div class="dropzone" data-answer="Design"></div></div>
+          <div class="scene">💻 Someone typing code on a laptop <div class="dropzone" data-answer="Programming"></div></div>
+          <div class="scene">🧠 A person drawing a game idea on paper <div class="dropzone" data-answer="Planning"></div></div>
+        </div>
+
+        <div class="drag-container">
+          <div class="drag Launching" draggable="true">Launching</div>
+          <div class="drag Programming" draggable="true">Programming</div>
+          <div class="drag Planning" draggable="true">Planning</div>
+          <div class="drag Testing" draggable="true">Testing</div>
+          <div class="drag Design" draggable="true">Design</div>
+        </div>
+
+      </section>
+
+      <h2>You’re a Game Developer master!</h2>
+      <section id="final">
+        <video controls poster="assets/chp6.jpg">
+          <!--tukar lepas asset asset jgn buang-->
+        <source src="assets/sum6.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <div style="text-align: center; margin-top: 40px;">
+         <a href="index.html" class="start-button">Complete</a>
+      </div>
+    </main>
+
+  </div>
+  <script src="js/script.js" defer></script>
+  <script src="js/dragdrop.js" defer></script>
+  <script src="js/question.js" defer></script>
+</body>
+
+</html>
